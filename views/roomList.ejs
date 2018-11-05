@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>roomList</title>
+		<link rel='stylesheet' href='./css/roomList.css'>
+	</head>
+	<body>
+		<div class='wrapper'>
+			<div class='roomshow-title'>Quiz List</div>
+			<ul>
+				<% for (let i = 16; i<=50; i++) { %>
+				<li>
+					<a href='<%=  "/room/" + i %>' >
+						<div class='roomTitle'>Lesson <%= i %></div>
+						<div class='roomDetail'>
+							word master <%= i %>과
+						</div>
+					</a>
+				</li>
+				<% } %>
+			</ul>
+		</div>
+	</body>
+</html>

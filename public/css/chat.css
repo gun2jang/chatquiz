@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:700,800');
+@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nanumgothic', sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    height: 100vh;
+}
+input:focus{
+    outline: 0;
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+.sign{
+    position: absolute;
+    top: 15vh;
+    width: 100%;
+    /* display: flex; */
+    justify-content: center;
+}
+.correct-sign, 
+.wrong-sign{
+    display: none;
+    transition: display 0.3s;
+}
+.sign > div{
+    font-family: 'Spicy Rice', cursive;
+    padding: 8vh 8vw;
+    border-radius: 5%;
+    font-weight: 500;
+    font-size: 4rem;
+    color: white;
+}
+.correct-sign > div{
+    background-color: rgba(96, 197, 255, 0.7);
+}
+.wrong-sign > div{
+    background-color: rgb(250, 78, 78);
+}
+.Problem{
+    display: flex;
+    justify-content: center;
+}
+.Problem > span {
+    font-size: 5vh;
+    padding: 2vh 0;
+    border-bottom: 0.5vh solid black;
+}
+.scoreBoard{
+    padding: 5vh 3vw;
+    font-size: 4vh;
+    color:white;
+    stroke: 1px black;
+    font-weight: bold;
+    -webkit-text-stroke:1px black; 
+    /* background-color: rgba(0, 0, 0, 0.1) */
+}
+#firstPlayer{
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#secondPlayer{
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+#messages {
+    list-style-type: none;
+    margin: 0;
+    padding: 4vh 1vw;
+    max-height: 72vh;
+    overflow-y: scroll;
+}
+
+#messages li {
+    padding: 5px 10px;
+}
+#messages > li > span{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+.inputZone{
+    padding: 1vh 0.5vw;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+.inputZone > input{
+    flex: 9;
+    border: 0;
+    border-bottom: 5px solid black;
+    margin: 1vw;
+    padding: 1vh 0.5vw;
+    font-size: 2rem;
+}
+.inputButton{
+    flex: 1;
+    font-size: 2rem;
+    width: 70%;
+    display: flex;
+    padding: 3vh 1vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 78, 78);
+    box-shadow: 3px 3px 3px rgb(255, 206, 206);
+    color: white;
+    margin: 1vw;
+    border-radius: 5%;
+    transition: 0.15s;
+}
+.inputButton:hover{
+    background-color:rgb(252, 157, 157);
+}

@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <link rel='stylesheet' href='/css/chat.css'>
+  </head>
+  <body>
+    <div class="sign correct-sign"><div>Correct</div></div>
+    <div class="sign wrong-sign"><div>Wrong</div></div>
+    <div class="Problem">
+      <span id="title"></span>
+    </div>
+    <span class="scoreBoard" id="firstPlayer">0</span>
+    <span class="scoreBoard" id="secondPlayer">0</span>
+    <ul id='messages'></ul>
+      <form action='' class='inputZone' id='form'>
+        <input id='input' autocomplete='off'/ autofocus>
+        <div class='inputButton'>Send</div>
+      </form>
+    <script src='/socket.io/socket.io.js'></script>
+    <script src='http://code.jquery.com/jquery-1.11.1.js'></script>
+    <script src='/js/chat.js'></script>
+    <!-- <script src='quiz.js'></script> -->
+  </body>
+</html>
